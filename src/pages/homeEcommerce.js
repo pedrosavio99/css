@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import IndexPage from "../components/indexPage";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
-import { Blackdiv } from "../components/utils/backgrounds";
 import CodeCopyComponent from "../components/CodeCopyElement";
 
 const HomeEcommerce = () => {
@@ -17,10 +16,10 @@ const HomeEcommerce = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
-      <Blackdiv>
+      <div style={{ background: "black" }}>
         <IndexPage />
         <CodeCopyComponent />
-      </Blackdiv>
+      </div>
     </>
   );
 };

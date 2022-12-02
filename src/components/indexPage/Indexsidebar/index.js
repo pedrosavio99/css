@@ -31,8 +31,8 @@ const Sidebar = ({ active }) => {
   return (
     <Container sidebar={active}>
       <Content>
-        <SidebarRoute2 to="/odontologia">
-          <SidebarItem Icon={FaTooth} Text="Odontologia" />
+        <SidebarRoute2 to="/bouncing">
+          <SidebarItem Icon={FaTooth} Text="Bouncing" />
         </SidebarRoute2>
 
         <SidebarRoute2 to="/medicina">

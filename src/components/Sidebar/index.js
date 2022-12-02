@@ -20,8 +20,8 @@ const Sidebar = ({ isOpen, toggle }) => {
       <SidebarWrapper>
         <SidebarMenu>
           <SearchComponent />
-          <SidebarRoute2 to="/odontologia" onClick={toggle}>
-            Odontologia
+          <SidebarRoute2 to="/bouncing" onClick={toggle}>
+          Bouncing
           </SidebarRoute2>
           <SidebarRoute2 to="/medicina" onClick={toggle}>
             Medicina

@@ -20,7 +20,7 @@ function App() {
         <Route path="/home"  element={<HomeEcommerce />} />
         <Route path="/login"  element={<LoginEcadastro />} />
         <Route path="/vendas"  element={<QueroVender />} />
-        <Route path="/odontologia"  element={<OdontologiaPage />} />
+        <Route path="/bouncing"  element={<OdontologiaPage />} />
         <Route path="/medicina"  element={<MedicinaPage />} />
         <Route path="/medicinavet"  element={<MedicimaVeterinaria />} />
         <Route path="/laboratorio"  element={<LaboratorioPage />} />

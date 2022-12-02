@@ -12,6 +12,7 @@ export const BlackDivCentralized = styled.div`
 
 export const Blackdiv = styled.div`
   background-color: black;
+  height: 100vh;
 `;
 
 
