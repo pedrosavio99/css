@@ -38,7 +38,7 @@ const BaucingDiv = styled.div`
   }
 
   .ball {
-    background-color: #ff1a66;
+    background-color: #1aff1a;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -102,12 +102,60 @@ const PageStyle = styled.div`
   }
 `;
 
+const obj = `
+const BaucingDiv = styled.div
+justify-content: center;
+text-align: center;
+height: 30%;
+width: 30%;
+position: absolute;
+margin: auto;
+left: 0;
+right: 0;
+top: 20%;
+
+@media screen and (max-width: 768px) {
+  left: -20vh;
+}
+@keyframes bounce {
+  10% {
+    height: 50px;
+    width: 50px;
+  }
+  30% {
+    height: 50px;
+    width: 40px;
+  }
+  50% {
+    height: 30px;
+    width: 57px;
+    transform: translateY(240px);
+  }
+}
+
+.ball {
+  background-color: #1aff1a;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: 100px;
+  left: 220px;
+  animation: bounce 0.9s infinite;
+}
+`;
+
 const OdontologiaPage = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(obj);
+  };
+
   return (
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
@@ -125,45 +173,26 @@ const OdontologiaPage = () => {
               <button class="first_next">Voltar!</button>
             </NavLink>
           </div>
-
-          <BaucingDiv>
-            <div className="ball"></div>
-          </BaucingDiv>
-          <CodeCopyDiv>
-            <div className="left">
-              <h1> Base page CSS </h1>
-              <div class="text-boxes">
-                <div class="text-box JSBox">
-                  <div class="topic">JavaScript Code:</div>
-                  <xmp style={{ color: "red" }}>
-                    {" "}
-                    <div className="ball"></div>
-                  </xmp>
-
-                  <textarea id="JSBox" readonly>
-                    preciso aprender a coloar o codigo aqui 
-                  </textarea>
-                  <button id="JSButton">Copy Codes</button>
-                </div>
-              </div>
-              <div class="text-boxes">
-                <div class="text-box JSBox">
-                  <div class="topic">JavaScript Code:</div>
-                  <textarea id="JSBox" readonly>
-                    Add JavaScript Code here
-                  </textarea>
-                  <button id="JSButton">Copy Codes</button>
-                </div>
-              </div>
-              <div class="text-boxes">
-                <div class="text-box JSBox">
-                  <div class="topic">JavaScript Code:</div>
-                  <textarea id="JSBox">Add JavaScript Code here</textarea>
-                  <button id="JSButton">Copy Codes</button>
-                </div>
-              </div>
+          <div style={{ position: "flex" }}>
+            <div style={{ position: "relative" }}>
+              <BaucingDiv>
+                <div className="ball"></div>
+              </BaucingDiv>
             </div>
-          </CodeCopyDiv>
+            <CodeCopyDiv>
+              <div className="left">
+                <div class="text-boxes">
+                  <div class="text-box JSBox">
+                    <div class="topic">JavaScript Code:</div>
+                    <pre>
+                      <code id="myBox">{obj}</code>
+                    </pre>
+                    <button id="JSButton" onClick={()=> handleCopy()}>Copy Codes</button>
+                  </div>
+                </div>
+              </div>
+            </CodeCopyDiv>
+          </div>
         </PageStyle>
       </Blackdiv>
     </>

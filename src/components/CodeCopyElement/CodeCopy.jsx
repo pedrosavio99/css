@@ -73,4 +73,17 @@ export const CodeCopyDiv = styled.div`
       width: 90vw !important ;
     }
   }
+
+
+  code{
+    width: 10%;
+    font-size: 17px;
+  }
+
+  @media screen and (max-width: 768px) {
+    code{
+    font-size: 13px;
+  }
+    
+  }
 `;
