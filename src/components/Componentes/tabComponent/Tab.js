@@ -27,24 +27,23 @@ const Tab = ({ children, active = 0 }) => {
         color: "white",
       }}
     >
-      <ul
+      <div
         style={{
           background: "black",
           color: "white",
         }}
       >
         {tabsData.map(({ tab }, idx) => (
-          <li className="nav-item">
-            <a
+          <div className="nav-item">
+            <p
               className={`nav-link ${idx === activeTab ? "active" : ""}`}
-              href="#"
               onClick={() => setActiveTab(idx)}
             >
               {tab}
-            </a>
-          </li>
+            </p>
+          </div>
         ))}
-      </ul>
+      </div>
 
       <div className="tab-content p-3">
         {tabsData[activeTab] && tabsData[activeTab].children}
