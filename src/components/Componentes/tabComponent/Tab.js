@@ -21,8 +21,18 @@ const Tab = ({ children, active = 0 }) => {
   }, [children]);
 
   return (
-    <div className="w-100 custom-tab">
-      <ul className="nav nav-tabs">
+    <div
+      style={{
+        background: "black",
+        color: "white",
+      }}
+    >
+      <ul
+        style={{
+          background: "black",
+          color: "white",
+        }}
+      >
         {tabsData.map(({ tab }, idx) => (
           <li className="nav-item">
             <a

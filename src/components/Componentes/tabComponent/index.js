@@ -8,18 +8,23 @@ const tabContent = [
 const SimpleTabs = () => {
   return (
     <>
-      <div title="Building simple Tab component in react" />
+      <div
+        style={{
+          background: "black",
+          color: "white",
+        }}
+      />
       <div className="row">
         <div className="col text-center">
           <h2>Tab Component</h2>
           <p>Building Tab component so falta estilizar </p>
           <div className="row text-left">
             <Tab active={1}>
-                {
-                   tabContent.map((tab,idx)=>(
-                    <Tab.TabPane key={`Tab-${idx}`} tab={tab.title}>{tab.content}</Tab.TabPane>
-                   ))
-                }
+              {tabContent.map((tab, idx) => (
+                <Tab.TabPane key={`Tab-${idx}`} tab={tab.title}>
+                  {tab.content}
+                </Tab.TabPane>
+              ))}
             </Tab>
           </div>
         </div>

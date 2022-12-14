@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-
+import SimpleStarRate from "../components/Componentes/qualqueroutro";
 import IndexPage from "../components/indexPage";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import SimpleTabs from "../components/Componentes/tabComponent";
-import CodeCopyComponent from "../components/CodeCopyElement";
 
 const HomeEcommerce = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,11 +17,16 @@ const HomeEcommerce = () => {
       <Navbar toggle={toggle} />
       <div style={{ background: "black" }}>
         <IndexPage />
-        <CodeCopyComponent />
         <div
-          style={{ background: "black", color: "white", textAlign: "center" }}
+          style={{
+            background: "black",
+            color: "white",
+            textAlign: "center",
+            height: "100vh",
+          }}
         >
           <SimpleTabs />
+          <SimpleStarRate />
         </div>
       </div>
     </>
