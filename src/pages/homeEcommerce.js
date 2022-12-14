@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SimpleStarRate from "../components/Componentes/qualqueroutro";
+// import SimpleStarRate from "../components/Componentes/qualqueroutro";
 import IndexPage from "../components/indexPage";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
@@ -26,7 +26,7 @@ const HomeEcommerce = () => {
           }}
         >
           <SimpleTabs />
-          <SimpleStarRate />
+          {/* <SimpleStarRate /> */}
         </div>
       </div>
     </>
