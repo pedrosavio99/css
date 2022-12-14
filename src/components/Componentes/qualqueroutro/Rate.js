@@ -6,6 +6,7 @@ import { FaStar } from "react-icons/fa";
 const Rate = ({ count, rating, color, onRating }) => {
   const [hoverRating, setHoverRating] = useState(0);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const getColor = (index) => {
     if (hoverRating >= index) {
       return color.filled;
@@ -30,7 +31,7 @@ const Rate = ({ count, rating, color, onRating }) => {
           onMouseLeave={() => setHoverRating(0)}
         />
       ));
-  }, [count, rating, hoverRating]);
+  }, [count, getColor, onRating]);
 
   return <div>{starRating}</div>;
 };
