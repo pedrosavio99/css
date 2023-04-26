@@ -1,15 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-// import CarouselComponent from "../components/Carousel";
-// import { Link } from "react-router-dom";
-// import ExemplePage from "../components/ExemplePage";
 import IndexPage from "../components/indexPage";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import { Blackdiv } from "../components/utils/backgrounds";
-import Footer from "../components/Footer";
-import ItemComum from "../components/Carousel/itemComum";
-import { NavLink } from "react-router-dom";
+
 
 const PageStyle = styled.div`
 .botao{
@@ -65,7 +60,7 @@ const PageStyle = styled.div`
   }
 `;
 
-const DiagnosticoPage = () => {
+const MyfistAnimationPage = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -79,19 +74,14 @@ const DiagnosticoPage = () => {
         <IndexPage />
         <PageStyle>
           <div className="left">
-            <h1> Diagnóstico por Imagem  </h1>
-            <ItemComum />
+            <h1> first Animation  </h1>
+
           </div>
-          <div className="botao">
-            <NavLink to="/home">
-              <button class="first_next">Voltar!</button>
-            </NavLink>
-          </div>
-          <Footer />
+
         </PageStyle>
       </Blackdiv>
     </>
   );
 };
 
-export default DiagnosticoPage;
+export default MyfistAnimationPage;
