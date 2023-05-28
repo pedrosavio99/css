@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 
 function TelaColorida() {
   const [cores, setCores] = useState([
-    { cor: 'yellow', conteudo: <div className='bg-slate-500'>meu deus</div> },
-    { cor: 'blue', conteudo: 'Div Azul' },
-    { cor: 'red', conteudo: 'Div Vermelha' },
-    { cor: 'green', conteudo: 'Div Verde' },
+    { cor: 'bg-slate-500', conteudo: <div className='bg-lime-900'>meu deus</div> },
+    { cor: 'bg-cyan-950', conteudo: 'Div Azul' },
+    { cor: 'bg-red-800', conteudo: 'Div Vermelha' },
+    { cor: 'bg-lime-900', conteudo: 'Div Verde' },
   ]);
 
   const handleDragStart = (event, index) => {
@@ -31,7 +31,7 @@ function TelaColorida() {
       {cores.map((item, index) => (
         <div
           key={item.cor}
-          className={`bg-${item.cor}-500`}
+          className={item.cor}
           draggable
           onDragStart={(event) => handleDragStart(event, index)}
           onDragOver={handleDragOver}
