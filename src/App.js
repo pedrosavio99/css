@@ -2,6 +2,7 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages";
 import OdontologiaPage from "./pages/Odontologia";
+import Telacarrosel from "./pages/carrosel/index";
 import MyfistAnimationPage from "./pages/myFirstAnimation";
 import Telaconfig from "./pages/telacofiguravel/index";
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/bouncing"  element={<OdontologiaPage />} />
         <Route path="/first_animation"  element={<MyfistAnimationPage />} />
         <Route path="/test_tela"  element={<Telaconfig />} />
+        <Route path="/carrosel"  element={<Telacarrosel />} />
       </Routes>
 
   );

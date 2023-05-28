@@ -19,13 +19,17 @@ const Sidebar = ({ isOpen, toggle }) => {
         <SidebarMenu>
           <SearchComponent />
           <SidebarRoute2 to="/bouncing" onClick={toggle}>
-          Bouncing
+            Bouncing
           </SidebarRoute2>
           <SidebarRoute2 to="/first_animation" onClick={toggle}>
             First animation
           </SidebarRoute2>
           <SidebarRoute2 to="/test_tela" onClick={toggle}>
             tela config
+          </SidebarRoute2>
+
+          <SidebarRoute2 to="/carrosel" onClick={toggle}>
+            carrosel
           </SidebarRoute2>
         </SidebarMenu>
       </SidebarWrapper>
