@@ -1,12 +1,11 @@
-import React from "react";
-import { Container, Content } from "./indexSidebar";
 import {
-  BiFile,
-  BiBarChart
+  BiBarChart,
+  BiFile
 } from "react-icons/bi";
+import { Container, Content } from "./indexSidebar";
 
-import SidebarItem from "../indexSidebarItem";
 import { SidebarRoute2 } from "../../Sidebar/SidebarElements";
+import SidebarItem from "../indexSidebarItem";
 
 const Sidebar = ({ active }) => {
 
@@ -22,6 +21,10 @@ const Sidebar = ({ active }) => {
           <SidebarItem Icon={BiBarChart} Text="First Animation" />
         </SidebarRoute2>
 
+
+        <SidebarRoute2 to="/test_tela">
+          <SidebarItem Icon={BiBarChart} Text="config tela" />
+        </SidebarRoute2>
       </Content>
     </Container>
   );

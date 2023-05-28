@@ -1,12 +1,11 @@
-import React from "react";
 import SearchComponent from "../search";
 import {
-  SidebarContainer,
-  Icon,
   CloseIcon,
-  SidebarWrapper,
+  Icon,
+  SidebarContainer,
   SidebarMenu,
   SidebarRoute2,
+  SidebarWrapper,
 } from "./SidebarElements";
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -24,6 +23,9 @@ const Sidebar = ({ isOpen, toggle }) => {
           </SidebarRoute2>
           <SidebarRoute2 to="/first_animation" onClick={toggle}>
             First animation
+          </SidebarRoute2>
+          <SidebarRoute2 to="/test_tela" onClick={toggle}>
+            tela config
           </SidebarRoute2>
         </SidebarMenu>
       </SidebarWrapper>
