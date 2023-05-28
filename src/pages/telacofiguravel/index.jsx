@@ -1,10 +1,15 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useState } from "react";
 import styled from "styled-components";
-import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
-import IndexPage from "../components/indexPage";
-import { Blackdiv } from "../components/utils/backgrounds";
+// import Navbar from "../components/Navbar";
+// import Sidebar from "../components/Sidebar";
+// import IndexPage from "../components/indexPage";
+// import { Blackdiv } from "../components/utils/backgrounds";
+
+import Navbar from "../../components/Navbar";
+import Sidebar from "../../components/Sidebar";
+import IndexPage from "../../components/indexPage";
+import { Blackdiv } from "../../components/utils/backgrounds";
 
 
 const PageStyle = styled.div`
