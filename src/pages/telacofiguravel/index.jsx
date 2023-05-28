@@ -79,8 +79,8 @@ const Telaconfig = () => {
       <Blackdiv>
         <IndexPage />
         <PageStyle>
-          <div className="left">
-            <h1> configtela  </h1>
+          <div className="left bg-slate-600">
+            <h1> configtela2  </h1>
 
           </div>
 
