@@ -6,6 +6,7 @@ import MyfistAnimationPage from "./pages/myFirstAnimation";
 import Telaconfig from "./pages/telacofiguravel/index";
 
 
+
 function App() {
   return (
       <Routes>

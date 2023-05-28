@@ -11,6 +11,8 @@ import Sidebar from "../../components/Sidebar";
 import IndexPage from "../../components/indexPage";
 import { Blackdiv } from "../../components/utils/backgrounds";
 
+import TelaColorida from "./telacolorida";
+
 
 const PageStyle = styled.div`
 .botao{
@@ -81,6 +83,8 @@ const Telaconfig = () => {
         <PageStyle>
           <div className="left bg-slate-600">
             <h1> configtela2  </h1>
+
+            <TelaColorida />
 
           </div>
 
